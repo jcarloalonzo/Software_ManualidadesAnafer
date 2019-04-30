@@ -1,0 +1,4 @@
+create user bbddEmpresa identified by oracle;
+create tablespace tbs_data datafile 'C:\oradata\Empresa\tbsdata01.dbf' size 300m;
+alter user bbddEmpresa default tablespace tbs_data quota unlimited on tbs_data;
+grant create session,dba to bbddEmpresa;
